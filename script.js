@@ -57,3 +57,21 @@ function reset() {
   document.getElementById("tie").innerHTML = `Ties:${tie}`;
   document.getElementById("result").innerHTML = "";
 }
+
+var id = null;
+function start() {
+  var pos = 0;
+  var elem = document.getElementById("popup");
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (pos == -350) {
+      clearInterval(id);
+    } else {
+      pos--;
+      console.log(pos);
+      elem.style.top = pos + "rem";
+    }
+  }
+  if (pos == -350) document.getElementById("popup").style.display = "none";
+}

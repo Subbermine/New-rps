@@ -51,7 +51,6 @@ h2{
     text-align: center;
     top: 0;
     padding: 5rem;
-    display: none;
 }
 #start:active{
     background-color: rgb(194, 194, 194);
