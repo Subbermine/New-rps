@@ -4,7 +4,7 @@ var loss = 0;
 var tie = 0;
 
 function action(personchoice) {
-  final = document.getElementById("result1");
+  final = document.getElementById("result");
 
   compchoice = Math.floor(Math.random() * 3);
   const hand = ["✊", "✋", "✌️"];
@@ -44,16 +44,16 @@ function action(personchoice) {
       tie++;
     }
   }
-  document.getElementById(
-    "score"
-  ).innerHTML = `Wins: ${won}, Losses: ${loss}, Ties:${tie}`;
+  document.getElementById("win").innerHTML = `Wins: ${won}`;
+  document.getElementById("loss").innerHTML = `Losses: ${loss}`;
+  document.getElementById("tie").innerHTML = `Ties:${tie}`;
 }
 function reset() {
   won = 0;
   loss = 0;
   tie = 0;
-  document.getElementById(
-    "score"
-  ).innerHTML = `Wins: ${won}, Losses: ${loss}, Ties:${tie}`;
-  document.getElementById("result1").innerHTML = "";
+  document.getElementById("win").innerHTML = `Wins: ${won}`;
+  document.getElementById("loss").innerHTML = `Losses: ${loss}`;
+  document.getElementById("tie").innerHTML = `Ties:${tie}`;
+  document.getElementById("result").innerHTML = "";
 }
