@@ -9,29 +9,15 @@
   <body>
     <h2>Please choose something</h2>
     <div id="container">
-      <button class="action" id="rock" onclick="setTimeout(action,50,'rock') ">
-        ✊
-      </button>
-      <button
-        class="action"
-        id="paper"
-        onclick="setTimeout(action,50,'paper') "
-      >
-        ✋
-      </button>
-      <button
-        class="action"
-        id="scissor"
-        onclick="setTimeout(action,50,'scissor') "
-      >
+      <button class="action" id="rock" onclick="action('rock')">✊</button>
+      <button class="action" id="paper" onclick="action('paper')">✋</button>
+      <button class="action" id="scissor" onclick="action('scissor')">
         ✌️
       </button>
     </div>
-    <button id="select" onclick="decide()">Select</button>
-    <div id="player_result" class="result">You chose:</div>
-    <div id="comp_result" class="result">Comp chose:</div>
-    <div id="result"></div>
-
+    <div id="result1"></div>
+    <div id="score">Wins: 0, Losses:0, Ties:0</div>
+    <button onclick="reset()" id="reset">Reset Score</button>
     <div id="popup">
       <h1>Rock Paper Scissor</h1>
       <button onclick="start()" id="start">Start</button>
