@@ -69,7 +69,6 @@ function start() {
       clearInterval(id);
     } else {
       pos--;
-      console.log(pos);
       elem.style.top = pos + "rem";
     }
   }
