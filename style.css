@@ -76,14 +76,11 @@ h2{
 }
 #score span{
     padding: 1rem 3rem;
+    border: 1px solid white;
+    border-radius: 1000px;
 }
 #score{
     font-size: larger;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
-}
-#tie{
-    border-right:  1px solid white;
-    border-left:  1px solid white;
 }
