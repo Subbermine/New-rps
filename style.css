@@ -1,0 +1,80 @@
+*{
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+}
+#select:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+#select{
+    display: block;
+    margin: 3rem auto;
+    padding: .5rem;
+    font-size: large;
+    border: 1px solid white;
+    transform: translateX(-.5rem);
+}
+.action:hover{
+    cursor: pointer;
+    background-color: rgb(54, 54, 54);
+}
+.action:active , #select:active{
+    background-color: rgb(95, 95, 95);
+}
+.action{
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 1rem;
+}
+#container{
+    margin: auto;
+    width: 24rem;
+    transform: translateX(1rem);
+}
+.result {
+    margin: 1.5rem 0;
+    font-size: x-large;
+}
+#result{
+    font-size: xx-large;
+    text-align: center;
+}
+#popup{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    padding: 5rem;
+}
+#start:active{
+    background-color: rgb(194, 194, 194);
+    box-shadow: none !important; 
+    transform: translateX(.2rem);
+    transform: translateY(.4rem);
+
+}
+#start:hover{
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+    box-shadow: .2rem .4rem rgb(212, 212, 212), 2px 4px grey;
+}
+#start{
+    border-radius: .3rem;
+    box-shadow: .2rem .4rem white, 2px 4px grey;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    margin-top: 5rem;
+    font-size: large;
+}

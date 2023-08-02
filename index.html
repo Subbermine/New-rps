@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <h2>Please choose something</h2>
+    <div id="container">
+      <button class="action" id="rock" onclick="setTimeout(action,50,'rock') ">
+        ✊
+      </button>
+      <button
+        class="action"
+        id="paper"
+        onclick="setTimeout(action,50,'paper') "
+      >
+        ✋
+      </button>
+      <button
+        class="action"
+        id="scissor"
+        onclick="setTimeout(action,50,'scissor') "
+      >
+        ✌️
+      </button>
+    </div>
+    <button id="select" onclick="decide()">Select</button>
+    <div id="player_result" class="result">You chose:</div>
+    <div id="comp_result" class="result">Comp chose:</div>
+    <div id="result"></div>
+
+    <div id="popup">
+      <h1>Rock Paper Scissor</h1>
+      <button onclick="start()" id="start">Start</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
